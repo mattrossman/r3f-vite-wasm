@@ -1,5 +1,5 @@
 {
-  "name": "my-wasm-app",
+  "name": "r3f-vite-wasm",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",

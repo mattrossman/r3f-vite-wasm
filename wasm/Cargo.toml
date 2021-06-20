@@ -1,5 +1,5 @@
 [package]
-name = "wasm-test"
+name = "wasm"
 version = "0.1.0"
 authors = ["mattrossman <rossman@gatech.edu>"]
 edition = "2018"

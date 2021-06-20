@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { Box, OrbitControls } from '@react-three/drei'
-import init, { greet } from 'wasm-test'
+import init, { greet } from 'wasm'
 
 function App() {
   useEffect(() => {

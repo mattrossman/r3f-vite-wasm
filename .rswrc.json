@@ -1,6 +1,4 @@
 {
   "root": ".",
-  "crates": [
-    "wasm-test"
-  ]
+  "crates": ["wasm"]
 }

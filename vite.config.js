@@ -1,12 +1,12 @@
 import reactRefresh from '@vitejs/plugin-react-refresh'
 import { defineConfig } from 'vite'
-import ViteRsw from 'vite-plugin-rsw'
+import viteRsw from 'vite-plugin-rsw'
 
 export default defineConfig({
   plugins: [
     reactRefresh(),
-    ViteRsw({
-      crates: ['wasm-test'],
+    viteRsw({
+      crates: ['wasm'],
     }),
   ],
   server: {
