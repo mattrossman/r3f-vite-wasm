@@ -1,4 +1,6 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
+import { Canvas } from '@react-three/fiber'
+import { Box, OrbitControls } from '@react-three/drei'
 import init, { greet } from 'wasm-test'
 
 function App() {
@@ -7,18 +9,12 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Hello WebAssembly!</p>
-        <p>Vite + Rust + React</p>
-        <p>
-          <button onClick={() => greet('wasm')}>hello wasm</button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-      </header>
-    </div>
+    <Canvas>
+      <Box onClick={() => greet('WASM')}>
+        <meshNormalMaterial />
+      </Box>
+      <OrbitControls autoRotate />
+    </Canvas>
   )
 }
 
